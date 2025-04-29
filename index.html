@@ -1,0 +1,504 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trending Now</title>
+  <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+
+  <h2 class="title">TRENDING NOW</h2>
+  <div class="trending-now">
+    <a href="#leggins" class="item">
+      <img src="legginsportada.webp" alt="Leggings">
+      <p>LEGGINGS</p>
+    </a>
+    <a href="#hoodies" class="item">
+      <img src="hoodiesportada.webp" alt="Hoodies">
+      <p>HOODIES</p>
+    </a>
+    <a href="#shorts" class="item">
+      <img src="shortsportada.webp" alt="Shorts">
+      <p>SHORTS</p>
+    </a>
+    <a href="#skirts" class="item">
+      <img src="skirtsportada.webp" alt="Skirts">
+      <p>SKIRTS</p>
+    </a>
+    <a href="#tops" class="item">
+      <img src="tshirtsportada.webp" alt="Tops">
+      <p>TOPS</p>
+    </a>
+  </div>
+
+  <!-- SECCIÓN LEGGINS -->
+  <div id="leggins" class="section">
+    <h2>LEGGINGS</h2>
+
+    <div class="product">
+      <img id="img-leggings1" src="leggins1.webp" alt="Leggings">
+
+      <div class="colors">
+        <span class="color" style="background-color: hsl(329, 88%, 48%);" 
+              onmouseover="changeImage('img-leggings1', 'leggins1.webp')"></span>
+        <span class="color" style="background-color: rgb(0, 64, 255);" 
+              onmouseover="changeImage('img-leggings1', 'leggins11.webp')"></span>
+        <span class="color" style="background-color: #4d0303;" 
+              onmouseover="changeImage('img-leggings1', 'leggins111.webp')"></span>
+      </div>
+
+      <div class="sizes">
+        <label><input type="radio" name="size-leggings1" value="XS"> XS</label>
+        <label><input type="radio" name="size-leggings1" value="S"> S</label>
+        <label><input type="radio" name="size-leggings1" value="M"> M</label>
+        <label><input type="radio" name="size-leggings1" value="L"> L</label>
+        <label><input type="radio" name="size-leggings1" value="XL"> XL</label>
+      </div>
+
+      <p>Airlift High-Waist 7/8 Legging</p>
+      <p>$110</p>
+      <button onclick="addProductToCart('Airlift High-Waist 7/8 Legging', 110, 'size-leggings1', 'img-leggings1')">
+        Add to Cart
+      </button>
+    </div>
+    <div class="product">
+        <img id="img-leggings2" src="leggins2.webp" alt="Leggings">
+      
+        <div class="colors">
+          <span class="color" style="background-color: hsl(26, 35%, 26%);"
+                onmouseover="changeImage('img-leggings2', 'leggins2.webp')"></span>
+          <span class="color" style="background-color: hsl(0, 56%, 2%);" 
+                onmouseover="changeImage('img-leggings2', 'leggins22.webp')"></span>
+          <span class="color" style="background-color: lch(71.83% 38.75 335.54);" 
+                onmouseover="changeImage('img-leggings2', 'leggins222.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-leggings2" value="XS"> XS</label>
+          <label><input type="radio" name="size-leggings2" value="S"> S</label>
+          <label><input type="radio" name="size-leggings2" value="M"> M</label>
+          <label><input type="radio" name="size-leggings2" value="L"> L</label>
+          <label><input type="radio" name="size-leggings2" value="XL"> XL</label>
+        </div>
+      
+        <p>Airlift Highlight Legging</p>
+        <p>$120</p>
+        <button onclick="addProductToCart('Airlift Highlight Legging', 120, 'size-leggings2', 'img-leggings2')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product">
+        <img id="img-leggings3" src="leggins3.webp" alt="Leggings">
+      
+        <div class="colors">
+          <span class="color" style="background-color: hsl(0, 0%, 2%);"
+                onmouseover="changeImage('img-leggings3', 'leggins3.webp')"></span>
+          <span class="color" style="background-color: hsl(180, 0%, 58%);"
+                onmouseover="changeImage('img-leggings3', 'leggins33.webp')"></span>
+          <span class="color" style="background-color: hwb(0 20% 80%);"
+                onmouseover="changeImage('img-leggings3', 'leggins333.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-leggings3" value="XS"> XS</label>
+          <label><input type="radio" name="size-leggings3" value="S"> S</label>
+          <label><input type="radio" name="size-leggings3" value="M"> M</label>
+          <label><input type="radio" name="size-leggings3" value="L"> L</label>
+          <label><input type="radio" name="size-leggings3" value="XL"> XL</label>
+        </div>
+      
+        <p>Airlift Line Up Legging</p>
+        <p>$115</p>
+        <button onclick="addProductToCart('Airlift Line Up Legging', 115, 'size-leggings3', 'img-leggings3')">
+          Add to Cart
+        </button>
+      </div>
+     
+  </div>
+  
+
+  <!-- SECCIONES VACÍAS -->
+ <!-- SECCIÓN HOODIES -->
+<div id="hoodies" class="section">
+    <h2>HOODIES</h2>
+  
+    <div class="product">
+      <img id="img-hoodie1" src="hoddie1.webp" alt="Hoodie">
+  
+      <div class="colors">
+        <span class="color" style="background-color: hwb(220 35% 40%);"
+              onmouseover="changeImage('img-hoodie1', 'hoddie1.webp')"></span>
+        <span class="color" style="background-color: hsl(0, 20%, 97%);"
+              onmouseover="changeImage('img-hoodie1', 'hoddie11.webp')"></span>
+        
+      </div>
+  
+      <div class="sizes">
+        <label><input type="radio" name="size-hoodie1" value="XS"> XS</label>
+        <label><input type="radio" name="size-hoodie1" value="S"> S</label>
+        <label><input type="radio" name="size-hoodie1" value="M"> M</label>
+        <label><input type="radio" name="size-hoodie1" value="L"> L</label>
+        <label><input type="radio" name="size-hoodie1" value="XL"> XL</label>
+      </div>
+  
+      <p>Alosoft Hooded Pullover</p>
+      <p>$95</p>
+      <button onclick="addProductToCart('Alosoft Hooded Pullover', 95, 'size-hoodie1', 'img-hoodie1')">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="product">
+        <img id="img-hoodie2" src="hoddie2.webp" alt="Hoodie">
+      
+        <div class="colors">
+          <span class="color" style="background-color: hsl(128, 86%, 5%);"
+                onmouseover="changeImage('img-hoodie2', 'hoddie2.webp')"></span>
+          <span class="color" style="background-color: #141414;"
+                onmouseover="changeImage('img-hoodie2', 'hoddie22.webp')"></span>
+          <span class="color" style="background-color: #e0e0e0;"
+                onmouseover="changeImage('img-hoodie2', 'hoddie222.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-hoodie2" value="XS"> XS</label>
+          <label><input type="radio" name="size-hoodie2" value="S"> S</label>
+          <label><input type="radio" name="size-hoodie2" value="M"> M</label>
+          <label><input type="radio" name="size-hoodie2" value="L"> L</label>
+          <label><input type="radio" name="size-hoodie2" value="XL"> XL</label>
+        </div>
+      
+        <p>Airlift Full-Zip Hoodie</p>
+        <p>$105</p>
+        <button onclick="addProductToCart('Airlift Full-Zip Hoodie', 105, 'size-hoodie2', 'img-hoodie2')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product">
+        <img id="img-hoodie3" src="hoddie3.webp" alt="Hoodie">
+      
+        <div class="colors">
+          <span class="color" style="background-color: hsl(8, 81%, 19%);"
+                onmouseover="changeImage('img-hoodie3', 'hoddie3.webp')"></span>
+          <span class="color" style="background-color: hsl(31, 45%, 78%);"
+                onmouseover="changeImage('img-hoodie3', 'hoddie33.webp')"></span>
+          <span class="color" style="background-color: hsl(320, 69%, 46%);"
+                onmouseover="changeImage('img-hoodie3', 'hoddie333.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-hoodie3" value="XS"> XS</label>
+          <label><input type="radio" name="size-hoodie3" value="S"> S</label>
+          <label><input type="radio" name="size-hoodie3" value="M"> M</label>
+          <label><input type="radio" name="size-hoodie3" value="L"> L</label>
+          <label><input type="radio" name="size-hoodie3" value="XL"> XL</label>
+        </div>
+      
+        <p>Alo Yoga City Hoodie</p>
+        <p>$100</p>
+        <button onclick="addProductToCart('Alo Yoga City Hoodie', 100, 'size-hoodie3', 'img-hoodie3')">
+          Add to Cart
+        </button>
+      </div>
+      
+  </div>
+  <!-- SECCIÓN SHORTS -->
+<div id="shorts" class="section">
+    <h2>SHORTS</h2>
+  
+    <div class="product">
+      <img id="img-short1" src="shorts1.webp" alt="Short">
+  
+      <div class="colors">
+        <span class="color" style="background-color: hsl(0, 64%, 27%);"
+              onmouseover="changeImage('img-short1', 'shorts1.webp')"></span>
+        <span class="color" style="background-color: hsl(319, 53%, 71%);"
+              onmouseover="changeImage('img-short1', 'shorts11.webp')"></span>
+        <span class="color" style="background-color: hwb(116 24% 58%);"
+              onmouseover="changeImage('img-short1', 'shorts111.webp')"></span>
+      </div>
+  
+      <div class="sizes">
+        <label><input type="radio" name="size-short1" value="XS"> XS</label>
+        <label><input type="radio" name="size-short1" value="S"> S</label>
+        <label><input type="radio" name="size-short1" value="M"> M</label>
+        <label><input type="radio" name="size-short1" value="L"> L</label>
+        <label><input type="radio" name="size-short1" value="XL"> XL</label>
+      </div>
+  
+      <p>Airlift Energy Short</p>
+      <p>$70</p>
+      <button onclick="addProductToCart('Airlift Energy Short', 70, 'size-short1', 'img-short1')">
+        Add to Cart
+      </button>
+    </div>
+    <div class="product">
+        <img id="img-short3" src="shorts3.webp" alt="Short">
+      
+        <div class="colors">
+          <span class="color" style="background-color: #090909;"
+                onmouseover="changeImage('img-short3', 'shorts3.webp')"></span>
+          <span class="color" style="background-color: #fefafa;"
+                onmouseover="changeImage('img-short3', 'shorts33.webp')"></span>
+          
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-short3" value="XS"> XS</label>
+          <label><input type="radio" name="size-short3" value="S"> S</label>
+          <label><input type="radio" name="size-short3" value="M"> M</label>
+          <label><input type="radio" name="size-short3" value="L"> L</label>
+          <label><input type="radio" name="size-short3" value="XL"> XL</label>
+        </div>
+      
+        <p>Seamless Sculpt Short</p>
+        <p>$72</p>
+        <button onclick="addProductToCart('Seamless Sculpt Short', 72, 'size-short3', 'img-short3')">
+          Add to Cart
+        </button>
+      </div>
+      
+    <div class="product">
+        <img id="img-short2" src="shorts2.webp" alt="Short">
+      
+        <div class="colors">
+          <span class="color" style="background-color: hsl(175, 74%, 28%);"
+                onmouseover="changeImage('img-short2', 'shorts2.webp')"></span>
+          <span class="color" style="background-color: #c9a2c0;"
+                onmouseover="changeImage('img-short2', 'shorts22.webp')"></span>
+          <span class="color" style="background-color: #3b3b3b;"
+                onmouseover="changeImage('img-short2', 'shorts222.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-short2" value="XS"> XS</label>
+          <label><input type="radio" name="size-short2" value="S"> S</label>
+          <label><input type="radio" name="size-short2" value="M"> M</label>
+          <label><input type="radio" name="size-short2" value="L"> L</label>
+          <label><input type="radio" name="size-short2" value="XL"> XL</label>
+        </div>
+      
+        <p>7/8 High-Waist Biker Short</p>
+        <p>$75</p>
+        <button onclick="addProductToCart('7/8 High-Waist Biker Short', 75, 'size-short2', 'img-short2')">
+          Add to Cart
+        </button>
+      </div>
+      
+  </div>
+  
+  </div>
+  <!-- SECCIÓN SKIRTS -->
+<div id="skirts" class="section">
+    <h2>SKIRTS</h2>
+  
+    <div class="product">
+      <img id="img-skirt1" src="skirts1.webp" alt="Skirt">
+  
+      <div class="colors">
+        <span class="color" style="background-color: hsl(28, 59%, 21%);"
+              onmouseover="changeImage('img-skirt1', 'skirts1.webp')"></span>
+        <span class="color" style="background-color: hsl(316, 100%, 79%);"
+              onmouseover="changeImage('img-skirt1', 'skirts11.webp')"></span>
+        
+      </div>
+  
+      <div class="sizes">
+        <label><input type="radio" name="size-skirt1" value="XS"> XS</label>
+        <label><input type="radio" name="size-skirt1" value="S"> S</label>
+        <label><input type="radio" name="size-skirt1" value="M"> M</label>
+        <label><input type="radio" name="size-skirt1" value="L"> L</label>
+        <label><input type="radio" name="size-skirt1" value="XL"> XL</label>
+      </div>
+  
+      <p>Airlift Tennis Skirt</p>
+      <p>$85</p>
+      <button onclick="addProductToCart('Airlift Tennis Skirt', 85, 'size-skirt1', 'img-skirt1')">
+        Add to Cart
+      </button>
+    </div>
+    <div class="product">
+        <img id="img-skirt2" src="skirts2.webp" alt="Skirt">
+      
+        <div class="colors">
+          <span class="color" style="background-color: #1e1206;"
+                onmouseover="changeImage('img-skirt2', 'skirts2.webp')"></span>
+          <span class="color" style="background-color: #0a0a0a;"
+                onmouseover="changeImage('img-skirt2', 'skirts22.webp')"></span>
+          <span class="color" style="background-color: #3a3737;"
+                onmouseover="changeImage('img-skirt2', 'skirts222.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-skirt2" value="XS"> XS</label>
+          <label><input type="radio" name="size-skirt2" value="S"> S</label>
+          <label><input type="radio" name="size-skirt2" value="M"> M</label>
+          <label><input type="radio" name="size-skirt2" value="L"> L</label>
+          <label><input type="radio" name="size-skirt2" value="XL"> XL</label>
+        </div>
+      
+        <p>High-Waist Match Skirt</p>
+        <p>$90</p>
+        <button onclick="addProductToCart('High-Waist Match Skirt', 90, 'size-skirt2', 'img-skirt2')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product">
+        <img id="img-skirt3" src="skirts3.webp" alt="Skirt">
+      
+        <div class="colors">
+          <span class="color" style="background-color: #f8f6f6;"
+                onmouseover="changeImage('img-skirt3', 'skirts3.webp')"></span>
+          <span class="color" style="background-color: hsl(210, 51%, 71%);"
+                onmouseover="changeImage('img-skirt3', 'skirts33.webp')"></span>
+          
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-skirt3" value="XS"> XS</label>
+          <label><input type="radio" name="size-skirt3" value="S"> S</label>
+          <label><input type="radio" name="size-skirt3" value="M"> M</label>
+          <label><input type="radio" name="size-skirt3" value="L"> L</label>
+          <label><input type="radio" name="size-skirt3" value="XL"> XL</label>
+        </div>
+      
+        <p>Performance Flow Skirt</p>
+        <p>$88</p>
+        <button onclick="addProductToCart('Performance Flow Skirt', 88, 'size-skirt3', 'img-skirt3')">
+          Add to Cart
+        </button>
+      </div>
+     <!-- SECCIÓN TOPS -->
+<div id="tops" class="section">
+    <h2>TOPS</h2>
+  
+    <div class="product">
+      <img id="img-top1" src="tops1.webp" alt="Top">
+  
+      <div class="colors">
+        <span class="color" style="background-color: #141414;"
+              onmouseover="changeImage('img-top1', 'tops1.webp')"></span>
+        <span class="color" style="background-color: #8a7559;"
+              onmouseover="changeImage('img-top1', 'tops11.webp')"></span>
+        <span class="color" style="background-color: #007da8;"
+              onmouseover="changeImage('img-top1', 'tops11.webp')"></span>
+      </div>
+  
+      <div class="sizes">
+        <label><input type="radio" name="size-top1" value="XS"> XS</label>
+        <label><input type="radio" name="size-top1" value="S"> S</label>
+        <label><input type="radio" name="size-top1" value="M"> M</label>
+        <label><input type="radio" name="size-top1" value="L"> L</label>
+        <label><input type="radio" name="size-top1" value="XL"> XL</label>
+      </div>
+  
+      <p>Seamless Sculpt Bra Tank</p>
+      <p>$60</p>
+      <button onclick="addProductToCart('Seamless Sculpt Bra Tank', 60, 'size-top1', 'img-top1')">
+        Add to Cart
+      </button>
+    </div>
+    <div class="product">
+        <img id="img-top2" src="tops2.webp" alt="Top">
+      
+        <div class="colors">
+          <span class="color" style="background-color: #f2005b;"
+                onmouseover="changeImage('img-top2', 'tops2.webp')"></span>
+          <span class="color" style="background-color: #c7c7c7;"
+                onmouseover="changeImage('img-top2', 'tops22.webp')"></span>
+          <span class="color" style="background-color: #5e3f3e;"
+                onmouseover="changeImage('img-top2', 'tops222.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-top2" value="XS"> XS</label>
+          <label><input type="radio" name="size-top2" value="S"> S</label>
+          <label><input type="radio" name="size-top2" value="M"> M</label>
+          <label><input type="radio" name="size-top2" value="L"> L</label>
+          <label><input type="radio" name="size-top2" value="XL"> XL</label>
+        </div>
+      
+        <p>Ribbed Cropped Tank</p>
+        <p>$55</p>
+        <button onclick="addProductToCart('Ribbed Cropped Tank', 55, 'size-top2', 'img-top2')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product">
+        <img id="img-top3" src="tops3.webp" alt="Top">
+      
+        <div class="colors">
+          <span class="color" style="background-color: #c1294c;"
+                onmouseover="changeImage('img-top3', 'tops3.webp')"></span>
+          <span class="color" style="background-color: #4c59ab;"
+                onmouseover="changeImage('img-top3', 'tops33.webp')"></span>
+          <span class="color" style="background-color: #0c0c0c;"
+                onmouseover="changeImage('img-top3', 'tops333.webp')"></span>
+        </div>
+      
+        <div class="sizes">
+          <label><input type="radio" name="size-top3" value="XS"> XS</label>
+          <label><input type="radio" name="size-top3" value="S"> S</label>
+          <label><input type="radio" name="size-top3" value="M"> M</label>
+          <label><input type="radio" name="size-top3" value="L"> L</label>
+          <label><input type="radio" name="size-top3" value="XL"> XL</label>
+        </div>
+      
+        <p>Movement Crossback Bra Tank</p>
+        <p>$65</p>
+        <button onclick="addProductToCart('Movement Crossback Bra Tank', 65, 'size-top3', 'img-top3')">
+          Add to Cart
+        </button>
+      </div>
+      
+      
+  </div>
+   
+      
+  </div>
+  
+  
+  
+  <div id="tops" class="section">TOPS</div>
+
+  <!-- CARRITO -->
+   <!-- Botón flotante del carrito -->
+<button id="cart-toggle" onclick="toggleCart()" title="Ver carrito">
+    🛒
+  </button>
+  
+  <div id="cart" class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()" style="background-color: green; color: white; margin-top: 10px;">checkout</button>
+  </div>
+  
+  
+<script src="proyecto.js"></script>
+<!-- MODAL -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>ADDED TO BAG</h2>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="Product Image">
+        <div class="modal-details">
+          <p id="modal-name"><strong>Product Name</strong></p>
+          <p><strong>Size:</strong> <span id="modal-size"></span></p>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <button onclick="clearCart()">CLEAR CART</button>
+        <button onclick="checkout()">CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+</body>
+</html>
+
