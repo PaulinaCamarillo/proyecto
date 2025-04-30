@@ -128,4 +128,16 @@ function showModal(product) {
       alert("Tu carrito está vacío.");
     }
   }
-  
+  function acceptRegulations() {
+  localStorage.setItem("fitstyle_regulations_accepted", "true");
+  document.getElementById("regulatory-modal").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const accepted = localStorage.getItem("fitstyle_regulations_accepted");
+  if (!accepted) {
+    document.getElementById("regulatory-modal").style.display = "flex";
+  } else {
+    document.getElementById("regulatory-modal").style.display = "none";
+  }
+});
