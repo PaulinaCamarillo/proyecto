@@ -2,16 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Trending Now</title>
-  <link rel="stylesheet" href="proyecto.css">
+<title>Trending Now</title>
+<link rel="stylesheet" href="proyecto.css">
 </head>
 <body>
   <header class="site-header">
     <div class="logo">Fit<span>Style</span></div>
-  </header>
+
+    <div class="header-info">
+      <div class="location-info">
+        <span class="icon">📍</span>
+        <div class="text">
+          <span class="small-text">Delivering to</span>
+          <span class="bold-text">Dublin D04</span>
+          <a href="#" class="update-location">Update location</a>
+        </div>
+      </div>
+      <div class="account-info-container" onclick="toggleSignin()">
+
+        <div class="account-info">
+          <span class="small-text">Hello, sign in</span>
+          <span class="bold-text">Account & Lists</span>
+        </div>
+      
+        <!-- Modal tipo Amazon -->
+        <div class="signin-popup" id="signin-popup">
+          <h3>Sign in</h3>
+          <label>Email or mobile phone number</label>
+          <input type="text" placeholder="Enter here">
+          <button>Continue</button>
+          <p style="font-size: 12px;">
+            By continuing, you agree to FitStyle’s 
+            <a href="#">Terms</a> and 
+            <a href="#">Privacy Notice</a>.
+          </p>
+          <hr>
+          <small>New to FitStyle?</small>
+          <button class="create-account">Create your FitStyle account</button>
+        </div>
+      </div>
+      
   
+        <span class="bold-text"></span>
+      </div>
+      <div class="language-info">
+        <span class="bold-text">English ▼</span>
+        <div>
+    </div>
+  </header>
 
   <h2 class="title">TRENDING NOW</h2>
+
   <div class="trending-now">
     <a href="#leggins" class="item">
       <img src="legginsportada.webp" alt="Leggings">
@@ -34,12 +75,21 @@
       <p>TOPS</p>
     </a>
   </div>
+  <div class="trending-now">
+    <!-- tus enlaces de imágenes -->
+  </div>
+  
+  <!-- 🌟 Frase inspiradora -->
+  <p class="inspiration-message">
+    Empowering active women to feel confident, stylish, and strong — every step of the way.
+  </p>
+  
 
   <!-- SECCIÓN LEGGINS -->
   <div id="leggins" class="section">
     <h2>LEGGINGS</h2>
 
-    <div class="product">
+    <div class="product" >
       <img id="img-leggings1" src="leggins1.webp" alt="Leggings">
 
       <div class="colors">
@@ -64,7 +114,10 @@
       <button onclick="addProductToCart('Airlift High-Waist 7/8 Legging', 110, 'size-leggings1', 'img-leggings1')">
         Add to Cart
       </button>
+      <button class="favorite-btn" onclick="toggleFavorite('Airlift High-Waist 7/8 Legging', this)">❤️</button>
+      
     </div>
+
     <div class="product">
         <img id="img-leggings2" src="leggins2.webp" alt="Leggings">
       
@@ -90,6 +143,7 @@
         <button onclick="addProductToCart('Airlift Highlight Legging', 120, 'size-leggings2', 'img-leggings2')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Airlift Highlight Legging', this)">❤️</button>
       </div>
       <div class="product">
         <img id="img-leggings3" src="leggins3.webp" alt="Leggings">
@@ -116,6 +170,7 @@
         <button onclick="addProductToCart('Airlift Line Up Legging', 115, 'size-leggings3', 'img-leggings3')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Airlift Line Up Legging', this)">❤️</button>
       </div>
      
   </div>
@@ -150,6 +205,7 @@
       <button onclick="addProductToCart('Alosoft Hooded Pullover', 95, 'size-hoodie1', 'img-hoodie1')">
         Add to Cart
       </button>
+      <button class="favorite-btn" onclick="toggleFavorite('Alosoft Hooded Pullover', this)">❤️</button>
     </div>
 
     <div class="product">
@@ -177,6 +233,7 @@
         <button onclick="addProductToCart('Airlift Full-Zip Hoodie', 105, 'size-hoodie2', 'img-hoodie2')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Airlift Full-Zip Hoodie', this)">❤️</button>
       </div>
       <div class="product">
         <img id="img-hoodie3" src="hoddie3.webp" alt="Hoodie">
@@ -203,6 +260,7 @@
         <button onclick="addProductToCart('Alo Yoga City Hoodie', 100, 'size-hoodie3', 'img-hoodie3')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Alo Yoga City Hoodie', this)">❤️</button>
       </div>
       
   </div>
@@ -235,6 +293,7 @@
       <button onclick="addProductToCart('Airlift Energy Short', 70, 'size-short1', 'img-short1')">
         Add to Cart
       </button>
+      <button class="favorite-btn" onclick="toggleFavorite('Airlift Energy Short', this)">❤️</button>
     </div>
     <div class="product">
         <img id="img-short3" src="shorts3.webp" alt="Short">
@@ -260,6 +319,7 @@
         <button onclick="addProductToCart('Seamless Sculpt Short', 72, 'size-short3', 'img-short3')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Seamless Sculpt Short', this)">❤️</button>
       </div>
       
     <div class="product">
@@ -287,6 +347,7 @@
         <button onclick="addProductToCart('7/8 High-Waist Biker Short', 75, 'size-short2', 'img-short2')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('7/8 High-Waist Biker Short', this)">❤️</button>
       </div>
       
   </div>
@@ -320,6 +381,7 @@
       <button onclick="addProductToCart('Airlift Tennis Skirt', 85, 'size-skirt1', 'img-skirt1')">
         Add to Cart
       </button>
+      <button class="favorite-btn" onclick="toggleFavorite('Airlift Tennis Skirt', this)">❤️</button>
     </div>
     <div class="product">
         <img id="img-skirt2" src="skirts2.webp" alt="Skirt">
@@ -346,6 +408,7 @@
         <button onclick="addProductToCart('High-Waist Match Skirt', 90, 'size-skirt2', 'img-skirt2')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('High-Waist Match Skirt', this)">❤️</button>
       </div>
       <div class="product">
         <img id="img-skirt3" src="skirts3.webp" alt="Skirt">
@@ -371,6 +434,7 @@
         <button onclick="addProductToCart('Performance Flow Skirt', 88, 'size-skirt3', 'img-skirt3')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Performance Flow Skirt', this)">❤️</button>
       </div>
      <!-- SECCIÓN TOPS -->
 <div id="tops" class="section">
@@ -401,6 +465,7 @@
       <button onclick="addProductToCart('Seamless Sculpt Bra Tank', 60, 'size-top1', 'img-top1')">
         Add to Cart
       </button>
+      <button class="favorite-btn" onclick="toggleFavorite('Seamless Sculpt Bra Tank', this)">❤️</button>
     </div>
     <div class="product">
         <img id="img-top2" src="tops2.webp" alt="Top">
@@ -427,6 +492,7 @@
         <button onclick="addProductToCart('Ribbed Cropped Tank', 55, 'size-top2', 'img-top2')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Ribbed Cropped Tank', this)">❤️</button>
       </div>
       <div class="product">
         <img id="img-top3" src="tops3.webp" alt="Top">
@@ -453,6 +519,7 @@
         <button onclick="addProductToCart('Movement Crossback Bra Tank', 65, 'size-top3', 'img-top3')">
           Add to Cart
         </button>
+        <button class="favorite-btn" onclick="toggleFavorite('Movement Crossback Bra Tank', this)">❤️</button>
       </div>
       
       
@@ -482,30 +549,88 @@
 <script src="proyecto.js"></script>
 <!-- MODAL -->
 <div id="cart-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2>ADDED TO BAG</h2>
-      <div class="modal-body">
-        <img id="modal-image" src="" alt="Product Image">
-        <div class="modal-details">
-          <p id="modal-name"><strong>Product Name</strong></p>
-          <p><strong>Size:</strong> <span id="modal-size"></span></p>
-        </div>
-      </div>
-      <div class="modal-buttons">
-        <button onclick="clearCart()">CLEAR CART</button>
-        <button onclick="checkout()">CHECKOUT</button>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>ADDED TO BAG</h2>
+
+    <!-- 🔽 Aquí se mostrarán las recomendaciones -->
+    <div id="modal-recommendations" style="margin-top: 20px;"></div>
+
+    <!-- Producto agregado -->
+    <div class="modal-body">
+      <img id="modal-image" src="" alt="Product Image">
+      <div class="modal-details">
+        <p id="modal-name"><strong>Product Name</strong></p>
+        <p><strong>Size:</strong> <span id="modal-size"></span></p>
       </div>
     </div>
+     <!-- Botones -->
+     <div class="modal-buttons">
+      <button onclick="clearCart()">CLEAR CART</button>
+      <button onclick="checkout()">CHECKOUT</button>
+    </div>
   </div>
+</div>
+
+    <!-- MODAL DE FAVORITOS -->
+<div id="favorites-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeFavoritesModal()">&times;</span>
+    <h2>My Favorites</h2>
+    <div id="favorites-list" class="modal-body" style="flex-direction: column;"></div>
+  </div>
+</div>
+
+
+   
+
  
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="URPSuU4ez8km7rdt6_uoK";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
+    <!-- Barra de acciones flotante -->
+<!-- Barra de acciones superior derecha -->
+<div id="action-bar">
+  <div id="favorites-icon" onclick="showFavoritesList()" title="My Favorites">
+    ❤️
+    <span id="favorites-count">0</span>
+  </div>
+
+  <div id="cart-toggle" onclick="toggleCart()" title="View Cart">
+    🛒
+    <span id="cart-count">0</span>
+  </div>
+
+  <!-- Regulatory Notice Modal -->
+<div id="regulatory-modal" class="modal-overlay">
+  <div class="modal-content">
+    <h2>Privacy & Data Notice</h2>
+    <p>
+      At FitStyle, your privacy matters. We do not collect or share personal data. 
+      If future features involve your data, we’ll follow GDPR standards, ask for your consent, and let you access or delete your information anytime.
+    </p>
+    <p>
+      By continuing, you agree to our ethical use of technology, including transparent recommendations and respectful design choices.
+    </p>
+    <button onclick="acceptRegulations()">I understand and agree</button>
+  </div>
+</div>
   
-<script>
-  window.chatbaseConfig = {
-    chatbotId: "URPSuU4ez8km7rdt6_uoK"
-  }
-</script>
-<script src="https://www.chatbase.co/embed.min.js" id="chatbase-script" defer></script>
+<!-- Regulatory Notice Modal -->
+<div id="regulatory-modal" class="modal-overlay">
+  <div class="modal-content">
+    <h2>Privacy & Data Notice</h2>
+    <p>
+      At FitStyle, your privacy matters. We do not collect or share personal data. 
+      If future features involve your data, we’ll follow GDPR standards, ask for your consent, and let you access or delete your information anytime.
+    </p>
+    <p>
+      By continuing, you agree to our ethical use of technology, including transparent recommendations and respectful design choices.
+    </p>
+    <button onclick="acceptRegulations()">I understand and agree</button>
+  </div>
+</div>
 
 </body>
 </html>
